@@ -1,0 +1,321 @@
+/* font-styles */
+@font-face {
+    font-family: "BasisGrotesquePro";
+    src: url(fonts/basis/BasisGrotesquePro-Regular.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "BasisGrotesquePro-Bold";
+    src: url(fonts/basis/BasisGrotesquePro-Bold.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "BasisGrotesquePro-Light";
+    src: url(fonts/basis/BasisGrotesquePro-Light.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+}
+/* general-styles */
+.wrapper{
+    max-width: 1148px;
+    margin: auto;
+}
+body{
+    font-family: "BasisGrotesquePro";
+    font-size: 16px;
+}
+h1, h2, h3, h4{
+    text-transform: uppercase;
+    font-family: "BasisGrotesquePro-Bold";
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+h3{
+    color: #0536FC;
+    margin-bottom: 2em;
+}
+h2{
+    font-size: 38px;
+}
+p{
+    opacity: 35%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+label{
+    color: #000000a6;
+}
+input{
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0;
+  }
+  
+  input[type="checkbox"] + label {
+    display: flex;
+  }
+  
+  input[type="checkbox"] + label:before {
+    content: "";
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    display: inline-block;
+    margin-inline-end: 15px;
+  }
+  
+  input[type="checkbox"]:disabled + label:before {
+    background: #eee;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    background: url(images/Vector\ 39\ \(1\).png) no-repeat center center;
+    background-size: 70% auto;
+  }
+
+/* section-styles */
+.investion{
+    margin-top: 7em;
+    padding-bottom: 9em;
+
+}
+.payment_method{
+    padding-top: 5.5em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.form_payment_method_choice{
+    display: flex;
+}
+.payment_method_choice {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+  }
+  .paypal_option, .bank_payment_receipt_option{
+    padding-left: 1em;
+  }
+.payment_method_choice + .payment_method_option_label {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .payment_method_choice + .payment_method_option_label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    display: inline-block;
+    border-radius: 50%;
+    margin-inline-end: 0.8em;
+  }
+  .payment_method_choice + .payment_method_option_label:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+  }
+  
+.payment_method_choice:checked + .payment_method_option_label:before {
+    background: #0536FC; /* replace with image */
+  }
+.bank_card{
+    padding-top: 5em;
+    max-width: 637px;
+}
+.summe_choice{
+    padding-top: 30px;
+}
+.summe_choice_standard{
+    display: flex;
+}
+.payment_type_choice {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+  }
+.summe_choice label {
+    width: 160px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .summe_choice input[type="radio"]{
+    display: none;
+  }
+  .summe_choice input:checked + label {
+    background: #0536FC;
+    border: 1px solid #0536FC;
+    color: white;
+    opacity: 100%;
+  }
+.another_summe{
+    width: 606px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.267);  
+    padding-left: 2em;
+}
+.another_summe::placeholder{
+    opacity: 35%;
+}
+.another_summe:focus{
+    border: 1px solid rgba(0, 0, 0, 0.267);  
+}
+.payment_type{
+    padding-top: 22px;
+    display: flex;
+}
+.payment_type_choice + .payment_type_option {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .onetime_option{
+    padding-left: 30px;
+  }
+  .payment_type_choice + .payment_type_option:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    display: inline-block;
+    border-radius: 50%;
+    margin-inline-end: 0.8em;
+  }
+  .payment_type_choice + .payment_type_option:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+  }
+  
+.payment_type_choice:checked + .payment_type_option:before {
+    background: #0536FC;
+  }
+.contact_date{
+    padding-top: 50px;
+}
+.contact_date_edit{
+    margin-top: 1.3em;
+    margin-bottom: 2em;
+    width: 630px;
+    background: none;
+    height: 34px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.267);  
+}
+.contact_date_edit::placeholder{
+    opacity: 35%;
+}
+.acception{
+    padding-top: 2em;
+}
+.acception_two{
+    padding-top: 1.5em;
+}
+.button_send_block{
+    padding-top: 3em;
+}
+.button_send{
+    width: 213px;
+    height: 55px;
+    background-color: #0536FC;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+.button_send:hover{
+    border: 1px solid #0536FC;
+    color: #0536FC;
+    background-color: white;
+}
+@media screen and (max-width:1096px){
+  .another_summe{
+    width: 525px;
+}
+.summe_choice label {
+  width: 137px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_date_edit{
+  width: 549px; 
+}
+}
+
+@media screen and (max-width:970px){
+  .payment_method{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper{
+  max-width: 600px;
+  margin: auto;
+}
+.form_payment_method_choice{
+  padding-top: 2em;
+}
+}
+@media screen and (max-width:596px){
+.wrapper{
+  max-width: 320px;
+}
+body{
+  font-size: 13px;
+}
+h2{
+  font-size: 26px;
+}
+h4{
+  font-size: 16px;
+
+}
+.form_payment_method_choice{
+  flex-direction: column;
+}
+.paypal_option, .bank_payment_receipt_option {
+  padding-left: 0em;
+}
+.acception_two{
+  display: flex;
+}
+.bank_card_option, .paypal_option{
+  padding-bottom: 0.7em;
+}
+.acception{
+  display: block;
+  margin: auto;
+}
+.another_summe{
+  width: 290px;
+}
+.contact_date_edit{
+  width: 310px; 
+}
+.button_send{
+  width: 310px; 
+
+}
+}
+

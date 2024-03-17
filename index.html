@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інвестиції</title>
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="investion">
+        <div class="wrapper">
+            <div class="block_text">
+                <h3>інвестиції</h3>
+                <h2>зробити — <br>інвестиції у програму</h2>
+            </div>
+            <div class="payment_method">
+                <div class="choose_payment_method_text">
+                    <h4>виберіть спосіб оплати</h4>
+                </div>
+                <div class="form_payment_method">
+                    <form action="#" method="post">
+                        <div class="form_payment_method_choice">
+                            <div class="bank_card_option">
+                                <input type="radio" id="bank_card" class="payment_method_choice" name="payment_method" value="bank_card">
+                                <label class="payment_method_option_label" for="bank_card">Банківська карта</label>
+                            </div>
+                            <div class="paypal_option">
+                                <input type="radio" id="paypal" class="payment_method_choice" name="payment_method" value="paypal">
+                                <label class="payment_method_option_label" for="paypal">PayPal</label>
+                            </div>
+                            <div class="bank_payment_receipt_option">
+                                <input type="radio" id="bank_payment_receipt" class="payment_method_choice" name="payment_method" value="bank_payment_receipt">
+                                <label class="payment_method_option_label" for="bank_payment_receipt">Банківська платіжна квитанція</label>
+                            </div>
+                        </div>
+                        <div class="bank_card">
+                            <h4>банківська карта</h4>
+                            <div class="summe_choice">
+                                <div class="summe_choice_standard">
+                                <input type="radio" id="50000" class="summe" name="summe" value="50000">
+                                <label class="summe_option" for="50000">50 000</label>
+                                <input type="radio" id="30000" class="summe" name="summe" value="50000">
+                                <label class="summe_option" for="30000">30 000</label>
+                                <input type="radio" id="10000" class="summe" name="summe" value="50000">
+                                <label class="summe_option" for="10000">10 000</label>
+                                <input type="radio" id="1000" class="summe" name="summe" value="50000">
+                                <label class="summe_option" for="1000">1 000</label>
+                                </div>
+                                <div class="another_summe_choice">
+                                    <input class="another_summe" type="text" placeholder="Інша сумма">
+                                </div>
+                             </div>
+                        </div>
+                        <div class="payment_type">
+                            <div class="monatly_option">
+                                <input type="radio" id="monatly" class="payment_type_choice" name="payment_type_choice" value="bank_card">
+                                <label class="payment_type_option" for="monatly">Щомісячно</label>
+                            </div>
+                            <div class="onetime_option">
+                                <input type="radio" id="onetime" class="payment_type_choice" name="payment_type_choice" value="paypal">
+                                <label class="payment_type_option" for="onetime">Одноразово</label>
+                            </div>
+                        </div>
+                        <div class="contact_date">
+                            <div class="contact_name">
+                                <h4>ім’я</h4>
+                                <input type="text" class="contact_date_edit" placeholder="Напишіть ваше ім’я" required>
+                            </div>
+                            <div class="contact_emaile">
+                                <h4>Email</h4>
+                                <input type="text" class="contact_date_edit" placeholder="Напишіть вашу електронну адресу" required>
+                            </div>
+                        </div>
+                        <div class="acception">
+                            <div class="acception_one">
+                                <input type="checkbox" class="acception_choice" id="acception1" required>
+                                <label class="acception_label" for="acception1">Я приймаю Договір оферти</label>
+                            </div>
+                            <div class="acception_two">
+                                <input type="checkbox" class="acception_choice" id="acception2" required>
+                                <label class="acception_label" for="acception2">Я приймаю Угоду про використання персональних даних</label>
+                            </div>
+                            <div class="button_send_block">
+                                <input type="submit" class="button_send" value="відправити">
+                            </div>
+                        </div>
+                        
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
